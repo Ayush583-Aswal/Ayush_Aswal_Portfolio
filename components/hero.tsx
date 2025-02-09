@@ -39,7 +39,7 @@
             </h1>
             <p className="text-[#777] text-base sm:text-lg mb-6 lg:text-xl">
               based in India. I am passionate about learning new technologies and building 
-              web applications. I also little experience on Machine Learning and Data Science. 
+              web applications. I also have little experience on Machine Learning and Data Science. 
             </p>
             <div>
               <Link

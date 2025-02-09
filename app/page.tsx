@@ -1,5 +1,4 @@
 export const dynamic = "force-dynamic"; 
-import Image from "next/image";
 import HeroSection from "@/components/hero";
 
 import ContactForm from "@/components/contact-form";

@@ -6,9 +6,8 @@ const EducationCard = ({ education }) => {
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
 
-  // Matching Skills section colors
-  const cardBg = isDarkMode ? "bg-gray-900" : "bg-white";
-  const borderColor = isDarkMode ? "border-gray-600" : "border-gray-300";
+  // const cardBg = isDarkMode ? "bg-gray-900" : "bg-white";
+  // const borderColor = isDarkMode ? "border-gray-600" : "border-gray-300";
   const textPrimary = isDarkMode ? "text-white" : "text-black";
   const textSecondary = isDarkMode ? "text-gray-300" : "text-gray-600";
 
