@@ -9,7 +9,9 @@ const Skills = () => {
   const [theme, setTheme] = useState<string | null>(null);
 
   useEffect(() => {
-    setTheme(resolvedTheme);
+    if (resolvedTheme !== undefined) {
+      setTheme(resolvedTheme);
+    }
   }, [resolvedTheme]);
 
   if (!theme) return null; 

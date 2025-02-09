@@ -2,12 +2,20 @@ import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { useTheme } from "next-themes";
 
-const EducationCard = ({ education }) => {
+interface EducationType {
+  id: number;
+  img: string;
+  school: string;
+  date: string;
+  grade: string;
+  desc: string;
+  degree: string;
+}
+
+const EducationCard = ({ education }: { education: EducationType }) => {
   const { resolvedTheme } = useTheme();
   const isDarkMode = resolvedTheme === "dark";
 
-  // const cardBg = isDarkMode ? "bg-gray-900" : "bg-white";
-  // const borderColor = isDarkMode ? "border-gray-600" : "border-gray-300";
   const textPrimary = isDarkMode ? "text-white" : "text-black";
   const textSecondary = isDarkMode ? "text-gray-300" : "text-gray-600";
 
@@ -38,7 +46,7 @@ const EducationCard = ({ education }) => {
         display: "flex",
         flexDirection: "column",
         gap: "12px",
-        backgroundColor: isDarkMode ? "#111827" : "#fff", 
+        backgroundColor: isDarkMode ? "#111827" : "#fff",
         color: isDarkMode ? "#fff" : "#333",
         boxShadow: isDarkMode
           ? "rgba(23, 92, 230, 0.15) 0px 4px 24px"
